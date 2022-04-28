@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Raleway:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="content-complete">
+        <div id="header">
+            <h1>KodeCamp Registeration</h1>
+            <p><i>Please fill the form below to get on the KodeCamp train..</i></p>
+        </div>
+        
+        <div id="form-content">
+            <form action="">
+                <div>
+                    <label for="firstname">First Name</label>
+                    <br>
+                    <input type="text" id="name" placeholder="Enter your first name">
+                </div>
+                <div>
+                  <label for="lastname">Last Name</label>
+                  <br>
+                  <input type="text" id="name" placeholder="Enter your last name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="gender">
+                    <p>Gender :</p>
+                    <label for="">
+                      <input 
+                        name="gender"
+                        value="Female"
+                        type="radio"
+                        class="first"
+                        > Female
+                    </label>
+                    <br>
+                    <label for="">
+                      <input 
+                        name="gender"
+                        value="male"
+                        type="radio"
+                        class="last"
+                        > Male
+                    </label>
+                </div>
+                <div>
+                    <p>Educational Level</p>
+                    <select name="educationalLevel" id="edulevel">
+                        <option disabled selected value="">Select Educational Level</option>
+                        <option value="">Bachelors Degree</option>
+                        <option value="">Masters</option>
+                        <option value="">Ph.D</option>
+                        <option value="">Undergraduate</option>
+                        <option value="">Others</option>
+                    </select>
+                </div>
+                <div class="laptop">
+                    <p>Do you have a laptop?</p>
+                    <label>
+                      <input
+                        name="have-a-laptop"
+                        value="Yes"
+                        type="radio"
+                        class="first"
+                      /> Yes
+                    </label>
+                    <br>
+                    <label>
+                      <input
+                        name="have-a-laptop"
+                        value="No"
+                        type="radio"
+                        class="last"
+                      /> No
+                    </label>
+                </div>
+                <div id="about">
+                  <p>
+                    How did you hear about KodeCamp? 
+                    <span>(check all that apply)</span>
+                  </p>
+                  <div class="checkbox">
+                    <label 
+                      ><input
+                        name="hear-abt-KodeCamp"
+                        value="friends"
+                        type="checkbox"
+                        class="first"
+                      /> Friends
+                    </label>
+                    <label>
+                      <input
+                        name="hear-abt-KodeCamp"
+                        value="Facebook"
+                        type="checkbox"
+                      /> Facebook
+                    </label>
+                    <label
+                      ><input
+                        name="hear-abt-KodeCamp"
+                        value="Twitter"
+                        type="checkbox"
+                      /> Twitter
+                    </label>
+                    <label
+                      ><input
+                        name="hear-abt-KodeCamp"
+                        value="Whatsapp"
+                        type="checkbox"
+                      /> WhatsApp
+                    </label>
+                    <label
+                      ><input
+                        name="hear-abt-KodeCamp"
+                        value="Family-member"
+                        type="checkbox"
+                        class="last"
+                      /> Family Members
+                    </label>
+              </div>
+              <div>
+                <p>What track are you registering for?</p>
+                <select name="track" id="track">
+                  <option disabled selected value="">Select your track</option>
+                  <option value="">Front End Web Development</option>
+                  <option value="">Back-End Web Development</option>
+                  <option value="">Ui/Ux Design</option>
+                  <option value="">Node.Js</option>
+                  <option value="">React</option>
+                  <option value="">Data Analysis</option>
+                  <option value="">Python</option>
+                  <option value="">Java</option>
+                  <option value="">PHP</option>
+                  <option value="">Product Management</option>
+              </select>
+                
+              </div>
+                  
+              </div>
+              <div>
+                <p>What level are you on?</p>
+                <select name="level" id="level">
+                    <option disabled
+                    selected value="">Select your skill level</option>
+                    <option value="">Beginner</option>
+                    <option value="">Intermediate</option>
+                </select>
+              </div>
+              <div>
+                <p>Tell us about yourself?</p>
+                <textarea
+                    id="about"
+                    name="about"
+                    rows="5"
+                    maxlength="300"
+                    placeholder="Type here..."
+                ></textarea>
+              </div>
+              <div>
+                <p>Country</p>
+                <select name="country" id="country">
+                    <option disabled
+                    selected value="">Select your country</option>
+                    <option value="">Nigeria</option>
+                    <option value="">Algeria</option>
+                    <option value="">South Africa</option>
+                    <option value="">Mali</option>
+                    <option value="">Tanzania</option>
+                    <option value="">Mozambique</option>
+                    <option value="">Zambia</option>
+                    <option value="">Congo</option>
+                    <option value="">Canada</option>
+                    <option value="">U.S.A</option>
+                    <option value="">Rest Of the World</option>
+                </select>
+              </div>
+              <div class="">
+                <button type="submit" id="submit">
+                  <a href="#">
+                  Submit
+                  </a>
+                </button>
+              </div>
+            </form>
+        </div>
+        
+    </section>
+</body>
+</html>
